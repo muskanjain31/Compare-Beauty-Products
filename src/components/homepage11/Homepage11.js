@@ -13,6 +13,7 @@ import HairCare from '../haircare/HairCare.js';
 import BodyCare from '../bodycare/BodyCare.js';
 import CartPage from "../CartPage/ContextCart.js";
 import './Homepage.css';
+import SignUp from '../Signin/Signup.js';
 
 function Homepage() {
   return (
@@ -25,6 +26,8 @@ function Homepage() {
           <Route path="/haircare" element={<HairCare />} />
           <Route path="/bodycare" element={<BodyCare />} />
           <Route path="/compare" element={<CartPage />} />
+          <Route path="/signup" element={<SignUp />} />
+
         </Routes>
       </Router>
     </div>

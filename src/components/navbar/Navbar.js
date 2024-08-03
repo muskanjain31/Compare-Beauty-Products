@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link component
 import './navbar.css';
-import Cart from '../../assets/images/cart.png';
+import Profile from '../../assets/images/Profile (2).png';
 
 function Navbar() {
   return (
@@ -33,7 +33,9 @@ function Navbar() {
                 <button className="btn btn-outline-success" type="submit">Compare</button>
             </form>
             <div className="cart-icon">
-              <img src={Cart} alt="Cart" /> {/* Add your cart image here */}
+              <Link to="/signup">
+                <img src={Profile} alt="Profile" /> {/* Wrapped img with Link */}
+              </Link>
             </div>
            
           </div>
